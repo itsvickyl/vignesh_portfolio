@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh L — Full Stack Developer & UI/UX Designer</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="description" content="Portfolio of Vignesh L — MCA student and aspiring Full Stack Developer specializing in responsive web applications, dashboard UI design, and modern frontend development." />
+  <meta name="keywords" content="Vignesh L, Full Stack Developer, UI/UX Designer, Frontend Developer, Portfolio, React, JavaScript, Web Developer Bengaluru" />
+  <meta name="author" content="Vignesh L" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vignesh L — Full Stack Developer & UI/UX Designer" />
+  <meta property="og:description" content="MCA student and aspiring Full Stack Developer building responsive, user-focused digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Grain overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-text">VIGNESH_L</span>
+      <svg class="nav-logo-scribble" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 5C20 2 40 7 60 4C80 1 100 6 118 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </a>
+    <div class="nav-center">
+      <div class="nav-links" id="navLinks">
+        <a href="#work" class="nav-link" data-section="work"><span>Work</span></a>
+        <a href="#about" class="nav-link" data-section="about"><span>About</span></a>
+        <a href="#skills" class="nav-link" data-section="skills"><span>Skills</span></a>
+        <a href="#journey" class="nav-link" data-section="journey"><span>Journey</span></a>
+        <a href="#contact" class="nav-link" data-section="contact"><span>Contact</span></a>
+      </div>
+    </div>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#work" class="mobile-link"><span class="mobile-link-num">01</span>Work</a>
+      <a href="#about" class="mobile-link"><span class="mobile-link-num">02</span>About</a>
+      <a href="#skills" class="mobile-link"><span class="mobile-link-num">03</span>Skills</a>
+      <a href="#journey" class="mobile-link"><span class="mobile-link-num">04</span>Journey</a>
+      <a href="#contact" class="mobile-link"><span class="mobile-link-num">05</span>Contact</a>
+      <a href="#contact" class="mobile-cta">Hire Me →</a>
+    </div>
+  </div>
+
+
+  <main>
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+
+      <div class="hero-content">
+        <p class="hero-greeting" id="heroGreeting">Hi, I'm Vignesh L —</p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="hero-line">Full Stack</span>
+          <span class="hero-line hero-accent">
+            Developer
+            <span class="hero-underline"></span>
+          </span>
+        </h1>
+        <p class="hero-description sticker-card" id="heroDesc">
+          I build responsive web applications & dashboard-style interfaces. Fusing clean code with intuitive UI/UX design.
+        </p>
+        <div class="hero-ctas">
+          <a href="#work" class="hero-btn-primary sticker-card">View My Work</a>
+          <a href="#contact" class="hero-btn-secondary">Get In Touch →</a>
+        </div>
+      </div>
+
+      <img
+        alt="Abstract digital workspace"
+        class="hero-image sticker-card"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9LZ5JBkwsnaBP_VF_dYFZZqwWXob9too12cNYDsy8R3SUnjWK3O9uVEPhzyFhACkeKE0JL1-yBpeWVwXVfVA1MSiaQw-VwyaPRGJrMfO5F4AY76gxzFjWpRP4NFa28EtJmQLgwhLcGeL4oow3GXeYnx-isjTcZsV8XIfDmCS2g0BkX4Djz7KoAWHDNmnqCGIOQzCFXpCjgSNDGboWt3q63n5n7R9K7jhJqofBsxbOCnirQ7f5kPm2dAUbdbYjFvcuwvmBZwYW4ZM"
+      />
+    </section>
+
+    <!-- ═══════════════ ABOUT SECTION ═══════════════ -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-collage reveal-left">
+          <div class="tape tape-1"></div>
+          <img
+            alt="Vignesh coding at desk"
+            class="about-img about-img-1 sticker-card"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxqimYb5UGQQNmvptJQI_XYGK5uUZjeQsPexutu82jvDfSHEoSO281QykoLlOff58d1cAcUA3x-h71LtAXHHiulA3_H3pfwrzVLDfNXIaCqPYRsCA6aVjsN8B85TxMeNEnM5Ia10mobJyWY8J3nnvjezIKErJLI60l8tOOmvMrL-gpEukGtdiHV2wC0TW7X1D9Z7FXjizRGVcYiZ8l1fNsDCrvQyZ10vnsZAWas8uI1npakbSzvBXjGgTGtG4p-8DQ0UwTVUBtfWA"
+          />
+          <div class="tape tape-2"></div>
+          <img
+            alt="Creative workspace with abstract design"
+            class="about-img about-img-2 sticker-card"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW_lS6XKoaDdH0ZA81RfS59IWKD6KoeH5G1rZZb-1Mal7bEer1Ns9w23D4BycURL7fQejxno4i--R5OMxbZ0L7Cl42F079h9wMqik9PZpOfSioAKXvYC7F3xIWfawhdbYOBav44yywV1sMeOs8UyxtpLdPsaAJgeLNRAP-xWdI6QvxOCi-zxG24HToqczvOuuOUOm6cCZqWCbnzZzHiIXN2oyzkXVjUXsjdZNlV22FyitophPr6FKI0HuoPjWb96RFsQy_Pwfvt0w"
+          />
+          <div class="about-sticker-label sticker-card">
+            <span>Building UIs</span>
+          </div>
+        </div>
+
+        <div class="about-text-card sticker-card reveal-right">
+          <div class="about-tape-decor"></div>
+          <h2 class="about-title">The Code Craftsman.</h2>
+          <p class="about-body">
+            I'm Vignesh L — an MCA student at Mount Carmel College, Bengaluru, and an aspiring Full Stack Developer. I don't just write code; I craft digital experiences that are clean, scalable, and intuitive.
+          </p>
+          <p class="about-body about-body-alt">
+            With strong skills in HTML, CSS, JavaScript, React, and Python, I focus on building responsive web applications with dashboard-style interfaces and modern user-focused designs. My work lives at the intersection of visual hierarchy and structured frontend development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ WORK / PROJECTS SECTION ═══════════════ -->
+    <section class="work" id="work">
+      <h2 class="section-title-sticker sticker-card reveal">
+        <span>Featured Work</span>
+      </h2>
+
+      <div class="projects-grid">
+        <!-- Project 1: Clippixx -->
+        <article class="project-card sticker-card reveal reveal-delay-1" data-tilt="2">
+          <div class="project-tape"></div>
+          <div class="project-img-wrapper">
+            <img alt="Clippixx Interface" class="project-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfekIA1tRY-Kt6iH3Fy2wkrwdeWFXd9pYEkhoslnxxAdJvpUGS0aYe1geMqvyKfI4MMHaL6qkSG0rZHMLwJRp_bFrIkOGlS8rZP-rLPI4ig9hd36Er-SFJxCtDinf0aMsqN_rUQcVgEHDdLDLqQ0R11Qh_wMiIyOwrRj3jsBpQ3KhJQjN0drBHyRrju-70IzJiFtmtR546wwiaOzbcGF4YAxI_AIV9YH3iiGDlYFAnQVMdcvKmuEz5VdjAjMsvTBMW6DXNKxrLsCk"
+            />
+          </div>
+          <div class="project-info">
+            <span class="project-tag sticker-chip">Frontend UI</span>
+            <h3 class="project-name">Clippixx</h3>
+            <p class="project-desc">Media & content interface with clean, modern UI. Focused on visual hierarchy, intuitive navigation, and responsive design across all devices.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Placement Dashboard -->
+        <article class="project-card sticker-card reveal reveal-delay-2" data-tilt="-3">
+          <div class="project-tape"></div>
+          <div class="project-img-wrapper">
+            <img alt="Placement Dashboard" class="project-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeidaU1zECQZ07A5Kb6AdtCPwQHEd4vuHEgrMpYH8SeJJP5CIRhdXBZHxBxMGoNYAXFU0PiG0e7K5kER--8uaAzejem1ojxmGCVOJkPBmMBQ58w-PwdpGVyugpvCqEh_Rfh8p67j9j31mASL4vBdYnP_szh5O1rh6YRH-2M3azVcjeiJ0mYhEuHUBBeRBfRb2HSWHvHz3xBQ965WG3rYZfkFsYS2S-JesNmr0nkXn6eZsci-JENp740Pkhs8rYus9LZ6_I9n6Hzf4"
+            />
+          </div>
+          <div class="project-info">
+            <span class="project-tag sticker-chip tag-secondary">Dashboard</span>
+            <h3 class="project-name">Placement Dashboard</h3>
+            <p class="project-desc">A responsive dashboard for managing interviews, seminars, orientations, and event applications with structured layouts and scheduling integration.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>REST API</span><span>Dashboard UI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: IoT Monitoring Dashboard -->
+        <article class="project-card sticker-card reveal reveal-delay-3" data-tilt="1">
+          <div class="project-tape"></div>
+          <div class="project-img-wrapper">
+            <img alt="IoT Monitoring Dashboard" class="project-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD0WO_PXX_uFH3gp1qKHphsvrWc_u2D7uzUWyvwHH0cpeT86tPfIie2GCXM1kwzaYeEf6Xsfy83QFBsT2wGbLyAp4IO_LLLa_oYPPHHGpI6uR97tL9-MJmZeBlO61Af56p3NIQw3wtKynltJlsK1m8LlPoEjLn2w0jt51w3WfVvaZpjAGfpFFPEy3Q6Copo0ucv09uOlHiTwQQrw3Aj_iinx3-V2DDjBJRkLH8LAnnAtsUYKiy_nDGndymML0PwR_5giQsvvJf1l8"
+            />
+          </div>
+          <div class="project-info">
+            <span class="project-tag sticker-chip tag-tertiary">IoT / In Dev</span>
+            <h3 class="project-name">IoT Monitoring</h3>
+            <p class="project-desc">Web-based dashboard to visualize device or sensor data. Clean UI sections, data readability, and responsive components for real-time monitoring.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>Dashboard</span><span>Sensors</span><span>Real-time</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: AI Gym Tracker -->
+        <article class="project-card sticker-card reveal reveal-delay-4" data-tilt="-2">
+          <div class="project-tape"></div>
+          <div class="project-img-wrapper">
+            <img alt="AI Gym Tracker" class="project-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9LZ5JBkwsnaBP_VF_dYFZZqwWXob9too12cNYDsy8R3SUnjWK3O9uVEPhzyFhACkeKE0JL1-yBpeWVwXVfVA1MSiaQw-VwyaPRGJrMfO5F4AY76gxzFjWpRP4NFa28EtJmQLgwhLcGeL4oow3GXeYnx-isjTcZsV8XIfDmCS2g0BkX4Djz7KoAWHDNmnqCGIOQzCFXpCjgSNDGboWt3q63n5n7R9K7jhJqofBsxbOCnirQ7f5kPm2dAUbdbYjFvcuwvmBZwYW4ZM"
+            />
+          </div>
+          <div class="project-info">
+            <span class="project-tag sticker-chip tag-error">AI / Final Year</span>
+            <h3 class="project-name">AI Gym Tracker</h3>
+            <p class="project-desc">Motion-tracking application that counts exercises and provides workout suggestions. Intuitive interface design with data visualization for fitness insights.</p>
+            <div class="project-tech">
+              <span>Python</span><span>AI/ML</span><span>Computer Vision</span><span>UI Design</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS / ARSENAL SECTION ═══════════════ -->
+    <section class="skills" id="skills">
+      <div class="skills-bg-pattern"></div>
+      <div class="skills-content">
+        <h2 class="skills-title reveal">The Arsenal</h2>
+
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="skill-category-title sticker-card">Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">HTML5</span>
+              <span class="skill-tag tag-secondary">CSS3</span>
+              <span class="skill-tag tag-tertiary">JavaScript</span>
+              <span class="skill-tag tag-primary">Java</span>
+              <span class="skill-tag tag-error">Python</span>
+              <span class="skill-tag tag-surface">React</span>
+              <span class="skill-tag tag-secondary">Node.js</span>
+              <span class="skill-tag tag-tertiary">REST API</span>
+              <span class="skill-tag tag-primary">Git</span>
+              <span class="skill-tag tag-surface">GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title sticker-card">Frontend & UI/UX</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-tertiary">Frontend Dev</span>
+              <span class="skill-tag tag-primary">Dashboard UI</span>
+              <span class="skill-tag tag-secondary">Responsive Design</span>
+              <span class="skill-tag tag-error">Mobile-First</span>
+              <span class="skill-tag tag-surface">UI/UX Principles</span>
+              <span class="skill-tag tag-primary">Visual Hierarchy</span>
+              <span class="skill-tag tag-tertiary">Wireframing</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title sticker-card">Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-secondary">VS Code</span>
+              <span class="skill-tag tag-primary">Figma</span>
+              <span class="skill-tag tag-error">Adobe Illustrator</span>
+              <span class="skill-tag tag-tertiary">Google Stitch</span>
+              <span class="skill-tag tag-surface">Google AI Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ JOURNEY / TIMELINE ═══════════════ -->
+    <section class="journey" id="journey">
+      <h2 class="section-title-sticker sticker-card journey-title-card reveal">
+        <span>The Journey</span>
+      </h2>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item sticker-card reveal" data-tilt="-1">
+          <div class="timeline-tape"></div>
+          <span class="timeline-date">Dec 2024 — Present</span>
+          <h3 class="timeline-heading">MCA — Mount Carmel College</h3>
+          <p class="timeline-body">Pursuing Master of Computer Applications in Bengaluru, deepening expertise in full-stack development, system design, and advanced frontend architectures.</p>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item sticker-card reveal" data-tilt="2">
+          <div class="timeline-tape"></div>
+          <span class="timeline-date">May 2024 — Jul 2024</span>
+          <h3 class="timeline-heading">Trainee — Palle Technologies</h3>
+          <p class="timeline-body">Java Full-Stack Trainee. Worked on real-world development covering frontend and backend basics. Practiced building structured web pages and integrating logic with UI components.</p>
+          <span class="timeline-location">📍 Bengaluru</span>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item sticker-card reveal" data-tilt="-2">
+          <div class="timeline-tape"></div>
+          <span class="timeline-date">Jan 2021 — Jan 2024</span>
+          <h3 class="timeline-heading">BCA — KLE Society Degree College</h3>
+          <p class="timeline-body">Completed Bachelor of Computer Applications, building a strong foundation in programming, data structures, and web technologies. Developed the AI-Powered Gym Tracker as a final year project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT SECTION ═══════════════ -->
+    <section class="contact" id="contact">
+      <div class="contact-blobs">
+        <div class="contact-blob contact-blob-1"></div>
+        <div class="contact-blob contact-blob-2"></div>
+        <div class="contact-blob contact-blob-3"></div>
+      </div>
+
+      <div class="contact-hero">
+        <h2 class="contact-title reveal" id="contactTitle">SAY HELLO</h2>
+        <p class="contact-subtitle sticker-card">
+          Let's build something brutally beautiful.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper sticker-card reveal-left">
+          <div class="tape tape-form"></div>
+          <div class="contact-urgent sticker-card">Urgent?</div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" name="user_name" class="form-input" placeholder="Who are you?" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email</label>
+              <input type="email" id="contactEmail" name="user_email" class="form-input" placeholder="Where can I reach you?" required />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">The Vision</label>
+              <textarea id="contactMessage" name="message" class="form-textarea sticker-card" placeholder="Tell me what we're creating..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="form-submit sticker-card" id="submitBtn">
+              <span class="submit-text">Send It</span>
+              <span class="material-symbols-outlined submit-icon" style="font-variation-settings: 'FILL' 1;">send</span>
+              <span class="submit-loading" style="display:none;">Sending...</span>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+
+        <!-- Social Collage -->
+        <div class="social-collage reveal-right">
+          <h3 class="social-watermark">CONNECT</h3>
+          <div class="social-stickers">
+            <a href="https://github.com/itsvickyl" target="_blank" rel="noopener" class="social-sticker sticker-card social-github" id="socialGithub">
+              <span class="material-symbols-outlined social-icon" style="font-variation-settings: 'FILL' 1;">code</span>
+              <span class="social-name">Github</span>
+            </a>
+            <a href="https://linkedin.com/in/vignesh-l-software-dev" target="_blank" rel="noopener" class="social-sticker sticker-card social-linkedin" id="socialLinkedin">
+              <span class="material-symbols-outlined social-icon" style="font-variation-settings: 'FILL' 1;">work</span>
+              <span class="social-name">LinkedIn</span>
+            </a>
+            <a href="mailto:j.vigneshreddy2003@gmail.com" class="social-sticker sticker-card social-email" id="socialEmail">
+              <span class="material-symbols-outlined social-icon" style="font-variation-settings: 'FILL' 1;">mail</span>
+              <span class="social-name">Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">VIGNESH_L</div>
+    <div class="footer-links">
+      <a href="https://github.com/itsvickyl" target="_blank" rel="noopener">Github</a>
+      <a href="https://linkedin.com/in/vignesh-l-software-dev" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:j.vigneshreddy2003@gmail.com">Email</a>
+    </div>
+    <div class="footer-copy">©2025 VIGNESH L. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--surface-container-lowest);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 95% 100%, 90% calc(100% - 15px), 85% 100%, 80% calc(100% - 20px), 75% 100%, 70% calc(100% - 10px), 65% 100%, 60% calc(100% - 20px), 55% 100%, 50% calc(100% - 15px), 45% 100%, 40% calc(100% - 20px), 35% 100%, 30% calc(100% - 10px), 25% 100%, 20% calc(100% - 20px), 15% 100%, 10% calc(100% - 15px), 5% 100%, 0 calc(100% - 20px));
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter: blur(60px);
+}
+.hero-blob-1 {
+  top: 20%; right: 10%; width: 300px; height: 300px;
+  background-color: var(--primary-container); opacity: 0.5;
+}
+.hero-blob-2 {
+  bottom: 20%; left: 10%; width: 400px; height: 400px;
+  background-color: var(--tertiary-container); opacity: 0.4;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-family: var(--font-headline);
+  font-size: clamp(60px, 8vw, 120px);
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-accent {
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-underline {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: var(--tertiary-fixed);
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+.hero-description {
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: var(--surface-variant);
+  padding: 20px;
+  max-width: 500px;
+  transform: rotate(1deg);
+  box-shadow: 4px 4px 0px 0px var(--secondary) !important;
+}
+
+.hero-image {
+  position: absolute;
+  right: var(--margin);
+  bottom: 100px;
+  width: 30%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transform: rotate(3deg);
+  box-shadow: 6px 6px 0px 0px var(--primary) !important;
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+/* About Section */
+.about {
+  background-color: var(--surface-container);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--margin);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-collage {
+  position: relative;
+  min-height: 500px;
+}
+
+.about-img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.about-img-1 {
+  top: 40px;
+  left: 0;
+  width: 75%;
+  aspect-ratio: 16/9;
+  transform: rotate(-2deg);
+  box-shadow: 4px 4px 0px 0px var(--tertiary) !important;
+  z-index: 10;
+}
+
+.about-img-2 {
+  bottom: 40px;
+  right: 40px;
+  width: 50%;
+  aspect-ratio: 1/1;
+  transform: rotate(6deg);
+  box-shadow: 4px 4px 0px 0px var(--secondary) !important;
+  z-index: 20;
+}
+
+.tape-1 {
+  top: 30px; left: 20px;
+  transform: rotate(-15deg);
+  z-index: 30;
+}
+
+.tape-2 {
+  bottom: 60px; right: 50px;
+  transform: rotate(25deg);
+  z-index: 30;
+}
+
+.about-sticker-label {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  font-family: var(--font-annotation);
+  padding: 4px 16px;
+  transform: rotate(12deg);
+  z-index: 30;
+  font-weight: bold;
+}
+
+.about-text-card {
+  background-color: var(--surface);
+  padding: var(--margin);
+  transform: rotate(1deg);
+  box-shadow: 6px 6px 0px 0px var(--primary) !important;
+  position: relative;
+  z-index: 30;
+}
+
+.about-tape-decor {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 15px;
+  background-color: var(--tertiary-fixed);
+  border: 2px solid var(--on-background);
+  transform: rotate(-12deg);
+}
+
+.about-title {
+  font-family: var(--font-headline);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.about-body {
+  margin-bottom: 16px;
+}
+.about-body-alt {
+  color: var(--on-surface-variant);
+}
