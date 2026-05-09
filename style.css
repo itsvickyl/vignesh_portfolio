@@ -1335,3 +1335,15 @@ section {
     padding-top: 60px;
   }
 }
+
+/* Accessibility: Focus Styles */
+*:focus-visible {
+  outline: 3px dashed var(--primary);
+  outline-offset: 4px;
+}
+
+/* Disabled State */
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
