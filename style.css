@@ -422,10 +422,18 @@ section {
 .hero-blob-1 {
   top: 20%; right: 10%; width: 300px; height: 300px;
   background-color: var(--primary-container); opacity: 0.5;
+  animation: float 20s infinite alternate ease-in-out;
 }
 .hero-blob-2 {
   bottom: 20%; left: 10%; width: 400px; height: 400px;
   background-color: var(--tertiary-container); opacity: 0.4;
+  animation: float 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(30px, -50px) rotate(5deg); }
+  100% { transform: translate(-20px, 30px) rotate(-5deg); }
 }
 
 .hero-content {
@@ -1186,27 +1194,36 @@ section {
   padding: 24px;
   width: 180px;
   text-decoration: none;
+  animation: stickerFloat 6s infinite alternate ease-in-out;
+}
+
+@keyframes stickerFloat {
+  from { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  to { transform: translateY(-15px) rotate(calc(var(--rot, 0deg) + 2deg)); }
 }
 
 .social-github {
   top: 10%; left: 10%;
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
-  transform: rotate(-6deg);
+  --rot: -6deg;
+  animation-delay: 0s;
 }
 
 .social-linkedin {
   top: 40%; right: 10%;
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
-  transform: rotate(12deg);
+  --rot: 12deg;
+  animation-delay: -2s;
 }
 
 .social-email {
   bottom: 10%; left: 20%;
   background-color: var(--primary-container);
   color: var(--on-primary-container);
-  transform: rotate(-3deg);
+  --rot: -3deg;
+  animation-delay: -4s;
 }
 
 .social-icon {
