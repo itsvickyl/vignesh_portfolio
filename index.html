@@ -23,12 +23,16 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <div id="top-sentinel" style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none;"></div>
   <!-- Grain overlay -->
   <div class="grain-overlay" aria-hidden="true"></div>
 
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
     <a href="#hero" class="nav-logo">
       <span class="nav-logo-text">VIGNESH_L</span>
       <svg class="nav-logo-scribble" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +48,7 @@
         <a href="#contact" class="nav-link" data-section="contact"><span>Contact</span></a>
       </div>
     </div>
-    <a href="#contact" class="nav-cta">Hire Me</a>
+    <a href="#contact" class="nav-cta magnetic-btn">Hire Me</a>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
       <span></span>
       <span></span>
@@ -85,8 +89,8 @@
           I build responsive web applications & dashboard-style interfaces. Fusing clean code with intuitive UI/UX design.
         </p>
         <div class="hero-ctas">
-          <a href="#work" class="hero-btn-primary sticker-card">View My Work</a>
-          <a href="#contact" class="hero-btn-secondary">Get In Touch →</a>
+          <a href="#work" class="hero-btn-primary sticker-card magnetic-btn">View My Work</a>
+          <a href="#contact" class="hero-btn-secondary magnetic-btn">Get In Touch →</a>
         </div>
       </div>
 
@@ -330,7 +334,7 @@
               <label for="contactMessage" class="form-label">The Vision</label>
               <textarea id="contactMessage" name="message" class="form-textarea sticker-card" placeholder="Tell me what we're creating..." rows="4" required></textarea>
             </div>
-            <button type="submit" class="form-submit sticker-card" id="submitBtn">
+            <button type="submit" class="form-submit sticker-card magnetic-btn" id="submitBtn">
               <span class="submit-text">Send It</span>
               <span class="material-symbols-outlined submit-icon" style="font-variation-settings: 'FILL' 1;">send</span>
               <span class="submit-loading" style="display:none;">Sending...</span>
