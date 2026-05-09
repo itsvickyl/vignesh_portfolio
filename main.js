@@ -68,7 +68,9 @@ revealElements.forEach(el => revealObserver.observe(el));
 
 // --- EmailJS Setup ---
 // Initialize EmailJS
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+if (import.meta.env.VITE_EMAILJS_PUBLIC_KEY) {
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+}
 
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
@@ -96,11 +98,22 @@ contactForm.addEventListener('submit', (e) => {
   };
 
   // Send email via EmailJS
-  emailjs.send(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    templateParams
-  )
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
+  if (!serviceId || !templateId) {
+    console.error('EmailJS configuration is missing.');
+    formStatus.textContent = 'Configuration error. Please contact me directly via email.';
+    formStatus.style.color = 'var(--error)';
+
+    submitText.style.display = 'inline-block';
+    submitIcon.style.display = 'inline-block';
+    submitLoading.style.display = 'none';
+    submitBtn.disabled = false;
+    return;
+  }
+
+  emailjs.send(serviceId, templateId, templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
        formStatus.textContent = 'Message sent successfully! Let\'s build something brutally beautiful.';
