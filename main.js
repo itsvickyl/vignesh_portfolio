@@ -33,21 +33,49 @@ window.addEventListener('scroll', () => {
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= (sectionTop - 200)) {
-      current = section.getAttribute('id');
+const navObserverOptions = {
+  rootMargin: '-20% 0px -79% 0px',
+  threshold: 0
+};
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const current = entry.target.getAttribute('id');
+      navLinks.forEach(link => {
+        const sectionId = link.getAttribute('data-section');
+        if (sectionId === current) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
     }
   });
+}, navObserverOptions);
 
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('data-section') === current) {
-      link.classList.add('active');
-    }
+sections.forEach(section => navObserver.observe(section));
+
+// --- Interactive 3D Tilt Effect ---
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
+
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
   });
 });
 
