@@ -20,9 +20,9 @@ mobileLinks.forEach(link => {
   });
 });
 
-// --- Navbar scroll shadow ---
+// --- Navbar scroll → morph to capsule ---
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 10) {
+  if (window.scrollY > 80) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
